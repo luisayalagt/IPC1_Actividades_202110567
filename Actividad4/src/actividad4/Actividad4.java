@@ -27,7 +27,7 @@ public class Actividad4 {
             System.out.println("* 4. Division               *");
             System.out.println("* 5. Potencia               *");
             System.out.println("* 6. Raiz                   *");
-            System.out.println("* 9. Salir                  *");
+            System.out.println("* 7. Salir                  *");
             System.out.println("*****************************");
             
             String opcion = Entradas.nextLine().trim().toLowerCase();
@@ -96,8 +96,8 @@ public class Actividad4 {
                     num2 = Entradas.nextDouble();
                     Entradas.nextLine();
                     
-                    total = Math.pow(num1, num2)
-;                    
+                    total = Math.pow(num1, num2);
+                    
                     System.out.println("La Potencia de " + num1 + " elevado a la " + num2 + " es de: " + total);     
                     break;
                     
@@ -105,17 +105,17 @@ public class Actividad4 {
                     System.out.println("** RAIZ **");
                     System.out.println("Ingrese el numero al que desea sacarle la raiz");
                     num1 = Entradas.nextDouble();
-                    System.out.println("Ingrese el indice de la raiz (Cuadrada, Cubica)");
+                    System.out.println("Ingrese el indice de la raiz (Cuadrada: 2, Cubica: 3)");
                     num2 = Entradas.nextDouble();
                     Entradas.nextLine();
                     
-                    total = Math.pow(num1, 1.0/num2)
-;                    
+                    total = Math.pow(num1, 1.0/num2);
+                    
                     System.out.println("La raiz " + num2 + " de " + num1 + " es de: " + total);              
                     break;
                     
                 case "siete":
-                    System.out.println("\nGracias por jugar! :D");
+                    System.out.println("\nGracias por usar la calculadora! :D");
                     salir = true;
                     break;                    
                 default:
